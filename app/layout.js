@@ -5,6 +5,7 @@ import { AppRouterCacheProvider } from '@mui/material-nextjs/v14-appRouter';
 import CssBaseline from '@mui/material/CssBaseline';
 import Navigator from "@/components/navigator";
 import AnimateBackground from "@/components/animebg";
+import ContactPlatform from "@/components/contact";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -33,11 +34,12 @@ export default function RootLayout({ children }) {
           {/* CssBaseline kickstart an elegant, consistent, and simple baseline to build upon. */}
           <CssBaseline />
           <div className="bg-center bg-auto h-screen w-full" style={{ backgroundImage: 'url(/back3.jpg)' }}>
-            <div className="h-full w-full bg-black/50 overflow-auto">
+            <div className="h-full w-full bg-black/50 overflow-y-auto overflow-x-hidden">
               {children}
             </div>
           </div>
           <Navigator />
+          <ContactPlatform />
         </AppRouterCacheProvider>
       </body>
     </html>

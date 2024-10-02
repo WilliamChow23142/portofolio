@@ -24,7 +24,7 @@ const Navigator = () => {
     }, [])
 
     return (
-        <div className="fixed bottom-4 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+        <div className="fixed w-[410px] bottom-4 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
             <div className="flex items-center px-4 py-1 border-2 rounded-full backdrop-blur-lg bg-white/10 box">
                 <Button className="px-2 py-1 text-sm text-white/70 hover:text-white" variant="outlined">Home</Button>
                 <Button className="px-2 py-1 text-sm text-white/70 hover:text-white" variant="outlined">About Me</Button>
@@ -32,7 +32,7 @@ const Navigator = () => {
                 <Button className="px-2 py-1 text-sm text-white/70 hover:text-white" variant="outlined">Portfolio</Button>
                 <Button className="px-2 py-1 text-sm text-white/70 hover:text-white" variant="outlined">Contact</Button>
             </div>
-            <div className="w-20 h-20 backdrop-blur-2xl  border-2 rounded-full absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 flex items-center justify-center">
+            <div className="w-20 h-20 backdrop-blur-2xl  border-2 rounded-full absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 flex items-center justify-center bg-white/10 hover:bg-white/20 transition-all duration-300 cursor-pointer">
                 <svg width="48" height="48" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <circle cx="16" cy="16" r="15" stroke="white" strokeWidth="1"></circle>
                     <rect x={x - 4} y={y} width="3" height="6" fill="white"></rect>
