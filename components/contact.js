@@ -15,7 +15,7 @@ const ContactPlatform = () => {
             url: "#"
         },
         {
-            name: "telegram",
+            name: "github",
             icon: <GitHub className="text-base" />,
             url: "#"
         }
