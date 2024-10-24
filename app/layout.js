@@ -33,7 +33,7 @@ export default function RootLayout({ children }) {
         <AppRouterCacheProvider options={{ enableCssLayer: true }}>
           {/* CssBaseline kickstart an elegant, consistent, and simple baseline to build upon. */}
           <CssBaseline />
-          <div className="bg-center bg-auto h-screen w-full" style={{ backgroundImage: 'url(/back3.jpg)' }}>
+          <div className="bg-center h-screen w-full bg-cover" style={{ backgroundImage: 'url(/back4.jpg)' }}>
             <div className="h-full w-full bg-black/25 overflow-y-auto overflow-x-hidden">
               {children}
             </div>
