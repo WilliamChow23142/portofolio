@@ -22,6 +22,7 @@ body {
   color: var(--foreground);
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
+  overflow: hidden;
 }
 
 @layer utilities {
@@ -34,4 +35,69 @@ body {
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: white;
   color: transparent;
+}
+
+.pulse-star {
+}
+
+.pulse-star-box {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+}
+
+.star {
+  width: 100%;
+  height: 100%;
+  aspect-ratio: 1;
+  background: rgb(255, 255, 255);
+  clip-path: polygon(50% 0,
+          calc(50%*(1 + sin(.4turn))) calc(50%*(1 - cos(.4turn))),
+          calc(50%*(1 - sin(.2turn))) calc(50%*(1 - cos(.2turn))),
+          calc(50%*(1 + sin(.2turn))) calc(50%*(1 - cos(.2turn))),
+          calc(50%*(1 - sin(.4turn))) calc(50%*(1 - cos(.4turn))));
+  cursor: pointer;
+}
+
+.star:hover {
+  background-color: white;
+  transition: all 0.4s;
+}
+
+.bigstar {
+  width: 100%;
+  height: 100%;
+  aspect-ratio: 1;
+  background: rgba(255, 255, 255, 0.3);
+  clip-path: polygon(50% 0,
+          calc(50%*(1 + sin(.4turn))) calc(50%*(1 - cos(.4turn))),
+          calc(50%*(1 - sin(.2turn))) calc(50%*(1 - cos(.2turn))),
+          calc(50%*(1 + sin(.2turn))) calc(50%*(1 - cos(.2turn))),
+          calc(50%*(1 - sin(.4turn))) calc(50%*(1 - cos(.4turn))));
+
+  box-shadow: 0px 0px 1px 1px #0000001a;
+  animation: pulse-animation 1s infinite;
+  animation-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94)
+}
+
+.pulse-star-box.rotate {
+  transition: all 2s;
+}
+
+.pulse-star:hover .rotate {
+  transform: translate(-50%, -50%) rotate(144deg);
+}
+
+@keyframes pulse-animation {
+  0% {
+    opacity: 0.8;
+  }
+
+  100% {
+    opacity: 0;
+    transform: scale(3, 3);
+  }
 }

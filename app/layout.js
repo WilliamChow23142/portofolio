@@ -6,6 +6,7 @@ import CssBaseline from '@mui/material/CssBaseline';
 import Navigator from "@/components/navigator";
 import AnimateBackground from "@/components/animebg";
 import ContactPlatform from "@/components/contact";
+import PulseStar from "@/components/star";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
