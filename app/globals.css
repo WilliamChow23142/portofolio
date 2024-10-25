@@ -112,3 +112,13 @@ body {
 .port-item:hover > div {
   display: flex;
 }
+
+::-webkit-scrollbar {
+  width: 3px;
+  background-color: rgb(73, 0, 57);
+}
+
+::-webkit-scrollbar-thumb {
+  width: 3px;
+  background-color: rgb(163, 0, 141);
+}
