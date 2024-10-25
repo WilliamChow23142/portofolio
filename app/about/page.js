@@ -91,7 +91,7 @@ const AboutPage = () => {
                                 <span>
                                     Full-Stack Engineer
                                 </span>
-                                <span>Master's Degree</span>
+                                <span>{`Master's Degree`}</span>
                             </div>
                             <div className="flex flex-col text-sm font-black">
                                 <span className="text-md">Yorkton, SK, Canada</span>
