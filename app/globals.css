@@ -2,8 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: "taffy";
+  src: url('./fonts/taffy.woff') format('woff'),
+}
+
 * {
   user-select: none;
+  font-family: taffy;
 }
 
 :root {
@@ -100,4 +106,9 @@ body {
     opacity: 0;
     transform: scale(3, 3);
   }
+}
+
+
+.port-item:hover > div {
+  display: flex;
 }

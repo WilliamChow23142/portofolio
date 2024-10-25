@@ -19,6 +19,12 @@ const geistMono = localFont({
   weight: "100 900",
 });
 
+const taffy = localFont({
+  src: "./fonts/taffy.woff",
+  variable: "--font-geist-mono",
+  weight: "100 900",
+});
+
 export const metadata = {
   title: "Arved Wonnek",
   description: "This is the personal website of Arved Wonnek",
