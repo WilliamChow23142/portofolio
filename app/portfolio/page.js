@@ -97,9 +97,9 @@ const Portfolio = () => {
                 {
                     urls.map((item, idx) => {
                         return (
-                            <div className="bg-cover w-full port-item h-60 rounded-lg opacity-90 hover:opacity-100 relative" key={idx}>
+                            <div className="bg-cover w-full border-2 port-item h-60 rounded-lg opacity-90 hover:opacity-100 relative" key={idx}>
                                 <img src={item.image} alt={item.title} className="w-full h-full object-cover rounded-lg" />
-                                <div className="absolute w-full h-full left-0 top-0 flex-col bg-black/80 hidden transition-all duration-300 justify-center items-center">
+                                <div className="absolute w-full h-full left-0 top-0 flex-col rounded-lg bg-black/80 hidden transition-all duration-300 justify-center items-center">
                                     <h4 className="text-center text-2xl font-black">{item.title}</h4>
                                     <h5 className="text-center">{`(${item.skills})`}</h5>
                                     <Link href={item.url} target="_blank">

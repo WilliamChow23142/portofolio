@@ -28,7 +28,7 @@ const Navigator = () => {
         <div className="fixed w-[410px] bottom-4 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
             <div className="flex items-center px-4 py-1 border-2 rounded-full backdrop-blur-lg bg-white/10 box">
                 <Link href={"/about"}>
-                    <Button className="px-2 py-1 text-sm text-white/70 hover:text-white" variant="outlined">About Me</Button>
+                    <Button className="px-2 py-1 text-sm text-white/70 hover:text-white" variant="outlined">About Him</Button>
                 </Link>
                 <Link href={"/history"}>
                     <Button className="px-2 py-1 text-sm text-white/70 hover:text-white" variant="outlined">History</Button>
@@ -38,7 +38,7 @@ const Navigator = () => {
                     <Button className="px-2 py-1 text-sm text-white/70 hover:text-white" variant="outlined">Portfolio</Button>
                 </Link>
                 <Link href={"/skill"}>
-                    <Button className="px-2 py-1 text-sm text-white/70 hover:text-white" variant="outlined">Hire Me</Button>
+                    <Button className="px-2 py-1 text-sm text-white/70 hover:text-white" variant="outlined">Hire Him</Button>
                 </Link>
             </div>
             <Link href={"/"}>
